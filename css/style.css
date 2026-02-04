@@ -1,3 +1,4 @@
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -125,4 +126,44 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============ IMAGE OPTIMIZATION ============ */
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ============ BETTER BUTTON FEEL ============ */
+
+.btn, button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
